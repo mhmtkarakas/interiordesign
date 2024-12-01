@@ -1,0 +1,62 @@
+/* Hero Bölümü */
+.hero-container {
+    position: relative; /* Göreceli konumlandırma */
+    width: 100%;
+    height: 120vh;
+    z-index: 2; /* Navbar'dan yüksek olmalı */
+    overflow: hidden;
+  }
+  
+  .hero-background {
+    position: absolute; /* Tam ekran yerleşimi */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    z-index: -1; /* Yazıların arkasında kalması için */
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Metin Alanı */
+  .hero-text {
+    position: absolute;
+    top: 50%; /* Dikey ortalama */
+    left: 5%; /* Sol kenardan boşluk */
+    transform: translateY(-50%); /* Gerçek dikey ortalama */
+    color: white; /* Yazı rengi beyaz */
+    z-index: 10;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Okunabilirlik için gölge */
+  }
+  
+  /* Büyük Başlık */
+  .hero-text h1 {
+    font-size: 3rem; /* Büyük başlık */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Alt Metin */
+  .hero-text p {
+    font-size: 1.5rem; /* Daha küçük alt yazı */
+    margin: 0;
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2rem; /* Mobilde daha küçük başlık */
+    }
+  
+    .hero-text p {
+      font-size: 1.2rem; /* Daha küçük alt metin */
+    }
+  
+    .hero-text {
+      left: 3%; /* Kenardan daha az boşluk */
+    }
+  }
+  
