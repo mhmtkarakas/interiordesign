@@ -18,8 +18,8 @@ const Hero = () => {
 
       {/* Metin Alanı */}
       <div className="hero-text">
-        <h1>Ev Dekorasyonu Bu Kadar Kolay Olmamıştı</h1>
-        <p>Mardin Türkiye</p>
+       <p>Mardin Türkiye</p>
+        <h1>Ev Dekorasyonu <br/> Bu Kadar <br/> Kolay Olmamıştı</h1>
       </div>
     </div>
   );

@@ -6,7 +6,17 @@
     z-index: 2; /* Navbar'dan yüksek olmalı */
     overflow: hidden;
   }
-  
+  .hero-container::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+  }
   .hero-background {
     position: absolute; /* Tam ekran yerleşimi */
     top: 0;
@@ -34,15 +44,19 @@
   
   /* Büyük Başlık */
   .hero-text h1 {
-    font-size: 3rem; /* Büyük başlık */
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
   }
   
   /* Alt Metin */
   .hero-text p {
-    font-size: 1.5rem; /* Daha küçük alt yazı */
-    margin: 0;
+    color: #E9E3D9;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
   }
   
   /* Responsive Tasarım */

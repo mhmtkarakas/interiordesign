@@ -1,31 +1,27 @@
-/* Genel Header Stilleri */
+
 .header {
-  /* display: flex;
-  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   padding: 0px 10px;
   padding-top: 35px;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: transparent;
-  z-index: 10; */
-  position: absolute; /* Resmin üzerinde yer alması için */
-  top: 0;
-  left: 12.5%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center !important;
-  padding: 0px 10px;
-  padding-top: 35px;
-  max-width: 1200px;
-  margin: 0 auto !important;
-  z-index: 5; /* Resimden daha üstte */
-  background: transparent; /* Arka plan şeffaf */
+  z-index: 5;
+  background: transparent;
   color: white;
 }
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Header genişliği */
+  padding: 0 20px; /* Sağ ve sol boşluk */
+  margin: 0 auto; /* Ortalamak için */
+}
 
-/* Sol Taraf: Logo ve Şirket İsmi */
+
 .header-left {
   display: flex;
   align-items: center;
@@ -42,11 +38,10 @@
   font-weight: bold;
 }
 
-/* Sağ Taraf: Telefon, Buton ve Toggle */
 .header-right {
   display: flex;
   align-items: center;
-  gap: 20px; /* Elemanlar arasındaki boşluk */
+  gap: 30px; 
 }
 
 .phone-number {
@@ -55,27 +50,30 @@
 }
 
 .btn-offer {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background: #D6A04C;
+  border: 1px solid #D6A04C;
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px 24px;
+  line-height: 15px;
+  border-radius: 0px;
+  transition: all ease .5s;
 }
 
 .btn-offer:hover {
-  background-color: #0056b3;
+  background-color: transparent;
+  border: 1px solid #D6A04C;
+ 
 }
 
-/* Toggle Button */
+
 .toggle-button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 24px;
+  width: 40px;
+  height: 16px;
   background: none;
   border: none;
   cursor: pointer;
@@ -88,11 +86,54 @@
   background-color: #fff;
   border-radius: 2px;
 }
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 335px;
+  height: 100%;
+  background: #111111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: right 0.8s ease-in-out !important; 
+  z-index: 15;
+}
+.menu-open {
+  right: 0; 
+}
+.menu-close {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  margin-top: 50px;
+  
+}
+.menu-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.menu-nav a:hover {
+  color: #d6a04c;
+}
 
-/* Responsive Tasarım */
+
 @media (max-width: 768px) {
   .phone-number {
-    display: none ; /* Telefon numarasını gizle */
+    display: none ;
   }
   .btn-offer{
     display: none ;
