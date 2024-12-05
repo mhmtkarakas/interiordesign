@@ -1,0 +1,102 @@
+/* Genel Ayarlar */
+.about-us-container {
+    padding: 50px 10%;
+    background-color: #0B0016;  /* Açık arka plan */
+  }
+  
+  /* Başlık */
+  .about-title {
+    color: #fff;
+    font-family: "Cabin", sans-serif;
+    font-size: 50px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 21px;
+  }
+  
+  /* İçerik (Flex Kullanımı) */
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Yan yana konumla */
+    gap: 60px;
+  }
+  
+  /* Sol ve Sağ Bölüm */
+  .about-left,
+  .about-right {
+    flex: 1 1 40%; /* Yan yana bölümlerin genişliğini ayarla */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-text-left {
+    width: 80%;
+    color: #E9E3D9;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.about-text-right{
+    width: 80%;
+    color: #E9E3D9;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Köşeleri yuvarlat */
+  }
+  
+  /* Buton */
+  .about-btn {
+    color: #fff;
+    border: 1px solid #D6A04C;
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    border-radius: 0px;
+    transition: all 0.6s ease;
+    width: 15rem;
+    margin-top: 40px; /* Üst boşluk artırıldı */
+    margin-bottom: 40px; 
+  }
+  
+  .about-btn:hover {
+    background-color:  #D6A04C; /* Daha koyu ton */
+    color: #fff;
+  }
+  
+  /* Responsive Ayarlar */
+  @media (max-width: 768px) {
+    .about-title {
+      text-align: center; /* Başlığı mobilde ortala */
+    }
+  
+    .about-content {
+      flex-direction: column; /* Mobilde alt alta */
+    }
+  
+    .about-left,
+    .about-right {
+      flex: 1 1 100%; /* Bölümleri tam genişlik yap */
+      text-align: center; /* Mobilde yazıları ortala */
+    }
+    .about-text-left,.about-text-right{
+        width: 100%;
+        text-align: center;
+    }
+  
+    .about-btn {
+      margin: 0 auto; /* Mobilde butonu ortala */
+    }
+  }
+  

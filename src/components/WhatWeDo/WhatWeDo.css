@@ -1,0 +1,91 @@
+/* Container ve Başlık */
+.what-we-do-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #0b0016;
+  }
+  
+  .section-title {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  /* Kart ve Görseller */
+  .what-we-do-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease; /* Kart hareketi için */
+  }
+  
+  .what-we-do-card:hover {
+    transform: translateY(10px); /* Kart aşağı doğru hareket eder */
+  }
+  
+  .what-we-do-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Bulanıklık efekti için */
+  }
+  
+  .what-we-do-card:hover .what-we-do-image {
+    opacity: 0.6; /* Görsel bulanıklaşır */
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Hover'da görünür hale gelir */
+  }
+  
+  .what-we-do-card:hover .overlay {
+    opacity: 1;
+  }
+
+/* İkon */
+.circle-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle-icon i {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Başlık ve Açıklama */
+  .image-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover sırasında başlık sarı olur */
+  .what-we-do-card:hover .image-title {
+    color: #d6a04c; /* Sarı renk */
+  }
+  
+  .image-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
