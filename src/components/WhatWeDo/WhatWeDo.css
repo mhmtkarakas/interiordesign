@@ -1,16 +1,17 @@
 /* Container ve Başlık */
 .what-we-do-container {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #0b0016;
-  }
+}
   
   .section-title {
+    display: block;
     text-align: left;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 50px;
     color: #fff;
   }
   
@@ -18,18 +19,19 @@
   .what-we-do-card {
     position: relative;
     overflow: hidden;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
-    transition: transform 0.3s ease; /* Kart hareketi için */
+    transition: transform 0.5s ease; /* Kart hareketi için */
   }
   
   .what-we-do-card:hover {
-    transform: translateY(10px); /* Kart aşağı doğru hareket eder */
+    transform: translateY(15px); /* Kart aşağı doğru hareket eder */
   }
   
   .what-we-do-image {
     width: 100%;
-    height: auto;
+    height: 350px;
+    margin-bottom: 25px;
     transition: opacity 0.3s ease; /* Bulanıklık efekti için */
   }
   
@@ -67,14 +69,17 @@
   .circle-icon i {
     font-size: 1.5rem;
     color: #333;
+    cursor: pointer;
   }
   
   /* Başlık ve Açıklama */
   .image-title {
-    font-size: 1.5rem;
-    margin-top: 15px;
-    font-weight: bold;
-    color: #333;
+    display: block;
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-weight: 400;
+    color:  #E9E3D9;
     transition: color 0.3s ease;
   }
   
@@ -84,8 +89,13 @@
   }
   
   .image-description {
-    font-size: 1rem;
-    color: #555;
-    margin-top: 5px;
+    font-size: 14px;
+    color:  #E9E3D9;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 768px) {
+    .what-we-do-container{
+      margin-bottom: 900px;
+    }
   }
   
