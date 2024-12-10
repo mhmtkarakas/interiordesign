@@ -1,0 +1,91 @@
+.customer-reviews-container {
+  padding: 20px;
+  background-color: #0A0A0A; /* Arka plan rengi */
+  color: #fff;
+  display: flex;
+  justify-content: center; /* Tüm slider'ı yatayda ortala */
+  align-items: center;
+}
+
+.customer-reviews-slider {
+  width: 100%;
+  max-width: 800px; /* Slider genişliği */
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  align-items: center; /* İçeriği ortala */
+}
+
+.review-slide {
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  align-items: center; /* Ortala */
+  text-align: center; /* Yorum metnini ortaya hizala */
+  padding: 20px;
+}
+
+.review-icon {
+  width: auto;
+  display: inline-block;
+  font-size: 4rem;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: #d6a04c; /* İkon rengi */
+}
+
+.review-comment {
+    color: #C1C1C1;
+    line-height: 1.5;
+   
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 200px;
+  margin: 0 auto; /* Yorum metni aralıkları */
+  margin-bottom: 32px;
+}
+
+.review-image-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Yuvarlak çerçeve */
+  overflow: hidden;
+  margin: 10px auto; /* Resim yukarı ve aşağı boşluk */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+  border: 3px solid  #d6a04c ;
+}
+
+.review-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #d6a04c; /* Sarı isim rengi */
+  margin: 10px auto;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .customer-reviews-slider {
+    max-width: 100%;
+  }
+
+  .review-icon {
+    font-size: 1.5rem;
+  }
+
+  .review-comment {
+    font-size: 0.9rem;
+  }
+
+  .review-image-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .review-name {
+    font-size: 0.8rem;
+  }
+}

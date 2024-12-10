@@ -4,6 +4,7 @@
   position: relative;
   overflow: visible;
   height: auto;
+
 }
 
 .projects-title-container {
@@ -23,6 +24,7 @@
   max-width: 1200px;
   margin: 0 auto;
   top: -150px;
+
 }
 
 .swiper {
@@ -36,6 +38,7 @@
   justify-content: center;
   overflow-y: visible;
   aspect-ratio: 16 / 9;
+  position: relative;
 }
 
 .slider-image {
@@ -55,8 +58,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
-  font-weight: bold;
   z-index: 10;
   opacity: 0; /* Başlangıçta görünmez */
   transform: translateY(100%); /* Alttan çıkması için başlangıç konumu */
@@ -105,6 +106,7 @@
 @media (max-width: 768px) {
   .projects-container {
     padding: 20px;
+    margin-top: -900px;
   }
   .swiper-container {
     position: relative;

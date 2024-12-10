@@ -1,3 +1,122 @@
-.container{
-    height: 100vh;
+/* Ana kapsayıcı */
+.why-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px; /* Sağ ve sol alan arasında boşluk */
+    align-items: center;
+    padding: 50px 10%;
+    height: auto;
+  }
+  
+  /* Görsel alanı */
+  .image-container {
+    flex: 1.5; /* Görsel alanı daha fazla yer kaplar */
+  }
+  
+  .why-us-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* İçerik alanı */
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .why-us-title {
+    color: #fff;
+    font-family: "Cabin", sans-serif;
+    font-size: 50px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 21px;
+  }
+  
+  .why-us-description {
+    color: #E9E3D9;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
 }
+  
+  .more-button {
+    width: 50%;
+    border: 1px solid #D6A04C !important;
+    background: none;
+    color: #D6A04C;
+    border: none;
+    padding: 12px 27px !important;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .more-button::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Hover'da istenen beyaz renk */
+    z-index: -1; /* Arka plana yerleştir */
+    transition: top 0.4s ease; /* Animasyon süresi ve hareketi */
+  }
+  
+  .more-button:hover {
+    color: #d6a04c; /* Hover'da metin rengini değiştir */
+  }
+  
+  .more-button:hover::before {
+    top: 0; /* Hover durumunda beyaz renk yukarıdan aşağıya iner */
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .why-us-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-container,
+    .content-container {
+      flex: 1;
+    }
+  
+    .why-us-image {
+      max-height: 300px; /* Mobilde görselin çok fazla yer kaplamasını engelle */
+    }
+  
+    .why-us-title {
+      font-size: 30px;
+      text-align: left;
+    }
+  
+    .why-us-description {
+    color: #E9E3D9;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    }
+  
+    .more-button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  
