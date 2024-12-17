@@ -37,8 +37,8 @@
     line-height: 1.5;
     font-size: 24px;
     font-weight: 400;
-    padding: 0 200px;
-  margin: 0 auto; /* Yorum metni aralıkları */
+padding: 0 200px;
+  margin: 0 auto;
   margin-bottom: 32px;
 }
 
@@ -47,8 +47,8 @@
   height: 80px;
   border-radius: 50%; /* Yuvarlak çerçeve */
   overflow: hidden;
-  margin: 10px auto; /* Resim yukarı ve aşağı boşluk */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+  margin: 10px auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   border: 3px solid  #d6a04c ;
 }
 
@@ -70,13 +70,15 @@
   .customer-reviews-slider {
     max-width: 100%;
   }
+  
 
   .review-icon {
     font-size: 1.5rem;
   }
 
   .review-comment {
-    font-size: 0.9rem;
+    font-size: 15px;
+    padding: 0 20px;
   }
 
   .review-image-container {

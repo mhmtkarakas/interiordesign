@@ -29,6 +29,17 @@ const Footer = () => {
           <p><i className="bi bi-telephone"></i> +90 123 456 78 90</p>
           <p><i className="bi bi-envelope"></i> info@mimarlikofis.com</p>
         </div>
+        <div className="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <i className="bi bi-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <i className="bi bi-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <i className="bi bi-twitter"></i>
+            </a>
+          </div>
       </div>
 
       {/* Telif Hakkı Alanı */}

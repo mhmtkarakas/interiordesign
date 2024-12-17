@@ -10,4 +10,5 @@ body{
   font-family: "Questrial", sans-serif;
   font-style: normal;
   background-color: #0B0016;  
+  overflow-x: hidden;
 }
