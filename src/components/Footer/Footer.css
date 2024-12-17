@@ -50,6 +50,16 @@
   .footer-column ul li a:hover {
     color: #d6a04c;
   }
+  .social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+   margin: 0 10px;
+  }
+  
+  .social-icon:hover {
+    color: #d6a04c;
+  }
   
   .footer-bottom {
     text-align: center;
@@ -68,16 +78,7 @@
     margin-top: 10px;
   }
   
-  .social-icon {
-    color: #fff;
-    font-size: 1.5rem;
-    transition: transform 0.3s, color 0.3s;
-  }
-  
-  .social-icon:hover {
-    transform: rotate(360deg);
-    color: #d6a04c;
-  }
+
   
   
   /* Responsive Design */

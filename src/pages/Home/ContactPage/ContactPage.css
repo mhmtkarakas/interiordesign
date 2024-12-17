@@ -1,0 +1,105 @@
+/* Genel Ayarlar */
+.contact-page {
+    color: #fff;
+  }
+  
+  /* Üst Banner */
+  .contact-banner {
+    position: relative;
+    height: 450px;
+    background: url('../../../utils/h2_hero1.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Flu kaplama */
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+  }
+  
+  .banner-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .banner-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  /* Harita */
+  .map-container {
+    max-width: 1320px;
+    margin: 90px auto;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+  }
+    /* İletişim Konteyneri */
+    .contact-container {
+        max-width: 1320px;
+        margin: 100px auto;
+      }
+      
+      .contact-form .form-control {
+        border: 1px solid #e5e6e9;
+        border-radius: 0px;
+        padding: 10px;
+        font-size: 16px;
+        background: transparent;
+        color: #ccc;
+      }
+      
+      .contact-form textarea {
+        height: auto;
+      }
+      
+      .contact-info {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      
+      .contact-info i {
+        font-size: 27px;
+        color: #fff;
+        margin-right: 10px;
+      }
+      /* Gönder Butonu */
+.btn-submit {
+    background-color: #D6A04C; /* Sarı */
+    border: 1px solid #D6A04C;
+    color: #fff; /* Siyah yazı */
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all ease .5s;
+  }
+  
+  .btn-submit:hover {
+    background-color: transparent;
+    border: 1px solid #D6A04C;
+  }
+  
+
+  @media (max-width: 768px) {
+    .map-container iframe {
+      display: none; /* Mobilde haritayı gizle */
+    }
+  }
+  
+
+  

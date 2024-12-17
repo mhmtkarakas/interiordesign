@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { Link } from "react-router-dom";
 import "./Header.css"; 
 
 const Header = () => {
@@ -40,7 +41,7 @@ const Header = () => {
           <a href="#services">Hizmetlerimiz</a>
           <a href="#projects">Projeler</a>
           <a href="#blog">Blog +</a>
-          <a href="#contact">İletişim</a>
+          <Link to="/iletisim">İletişim</Link>
         </nav>
       </div>
     </>
